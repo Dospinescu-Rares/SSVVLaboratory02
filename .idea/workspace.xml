@@ -4,109 +4,149 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5843c397-2f86-4bd3-81e2-58952393b27e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="b36d879d-7101-4287-905a-b9d16a497db9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grades.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ssvv/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/Features/AddStudentFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/students.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/DataInceput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Note.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Note.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Studenti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Studenti.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Teme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Teme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/eu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/la.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitorizareV02/META-INF/MonitorizareV02.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/curent/Curent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/curent/Curent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Nota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Nota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Tema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Tema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/HasID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/HasID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2dXp0ljCnrypSeXfQBBK79mlIGz" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "git-widget-placeholder": "AddStudFeat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ServiceTest">
-    <configuration name="ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\i.dezmirean\OneDrive - Accenture\Desktop\Sem6\SSVV\Git\SSVVLaboratory02" />
+      <recent name="C:\Users\i.dezmirean\OneDrive - Accenture\Desktop\Sem6\SSVV\Git\SSVVLaboratory02\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AddStudentFeatureTest">
+    <configuration name="AddStudentFeatureTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MonitorizareTemeLaboratorV02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="service.*" />
+          <option name="PATTERN" value="ssvv.example.Features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
+      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddStudentFeatureTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.addStudentInvalidId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MonitorizareTemeLaboratorV02" />
+    <configuration name="AddStudentFeatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSVV02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="service.*" />
+          <option name="PATTERN" value="ssvv.example.Features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
-      <option name="METHOD_NAME" value="addStudentInvalidId" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddStudentFeatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BackupProj" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BackupProj" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ServiceTest" />
-        <item itemvalue="JUnit.ServiceTest.addStudentInvalidId" />
+        <item itemvalue="JUnit.AddStudentFeatureTest" />
+        <item itemvalue="JUnit.AddStudentFeatureTest (1)" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="5843c397-2f86-4bd3-81e2-58952393b27e" name="Changes" comment="" />
-      <created>1710164060690</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1710164060690</updated>
-      <workItem from="1710164062615" duration="405000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ssvv/example/Features/AddStudentFeatureTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
