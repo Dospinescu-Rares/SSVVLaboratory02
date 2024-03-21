@@ -33,7 +33,7 @@ public interface CrudRepository<ID, E> {
      * @throws IllegalArgumentException
      * if the given entity is null. *
      */
-    E save(E entity) throws ValidationException;
+    E save(E entity) throws Exception;
     /**
      * removes the entity with the specified id
      * @param id

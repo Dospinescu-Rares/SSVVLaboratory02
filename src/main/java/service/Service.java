@@ -57,9 +57,13 @@ public class Service {
      * @param student - studentul pe care il adauga
      * @return null daca studentul a fost adaugat cu succes sau studentul din memorie daca acesta exista deja
      */
-    public Student addStudent(Student student) {
+    public Student addStudent(Student student) throws ValidationException {
         studentValidator.validate(student);
-        return studentFileRepository.save(student);
+        Student result = studentFileRepository.save(student);
+        if(result == null){
+            throw new ValidationException("Id must be unique!");
+        }
+        return result;
     }
 
     /**

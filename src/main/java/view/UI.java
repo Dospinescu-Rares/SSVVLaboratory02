@@ -63,7 +63,7 @@ public class UI {
     /**
      * Afiseaza meniul de comenzi asupra studentilor
      */
-    private void meniuStudent() {
+    private void meniuStudent() throws ValidationException {
         while (true) {
             System.out.println("\n0.Iesire meniu student");
             System.out.println("1.Introducere student");
