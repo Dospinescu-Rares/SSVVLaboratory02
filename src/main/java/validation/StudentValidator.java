@@ -11,13 +11,19 @@ public class StudentValidator implements Validator<Student> {
      */
     @Override
     public void validate(Student entity) throws ValidationException {
-        if(entity.getID().equals("")){
-            throw new ValidationException("Id incorect!");
-        }
+        String nameRexeg = "^[a-zA-Z ]+$";
+        String emailRegex = "^\\S+@\\S+\\.\\S+$";
+
         if(entity.getID() == null){
             throw new ValidationException("Id incorect!");
         }
-        if(entity.getNume() == ""){
+        if(entity.getID().equals("")){
+            throw new ValidationException("Id incorect!");
+        }
+        if(entity.getNume() == null){
+            throw new ValidationException("Nume incorect!");
+        }
+        if(entity.getNume() == "" || !(entity.getNume().matches(nameRexeg))){
             throw new ValidationException("Nume incorect!");
         }
         if(entity.getGrupa() < 0) {
@@ -26,10 +32,7 @@ public class StudentValidator implements Validator<Student> {
         if(entity.getEmail() == null){
             throw new ValidationException("Email incorect!");
         }
-        if(entity.getNume() == null){
-            throw new ValidationException("Nume incorect!");
-        }
-        if(entity.getEmail().equals("")){
+        if(entity.getEmail().equals("") || !(entity.getEmail().matches(emailRegex))){
             throw new ValidationException("Email incorect!");
         }
     }

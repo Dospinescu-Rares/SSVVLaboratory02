@@ -41,14 +41,14 @@ public abstract class AbstractCrudRepository <ID, E extends HasID<ID>> implement
      * @return null daca obiectul a fost salvat sau obiectul daca acesta exista deja
      */
     @Override
-    public E save(E entity) {
-        /*
+    public E save(E entity){
+
         for(ID id: elemente.keySet()){
             if(id == entity.getID()){
                 return elemente.get(id);
             }
         }
-        */
+
         E el = this.findOne(entity.getID());
         if (el==null){
             this.elemente.put(entity.getID(), entity);

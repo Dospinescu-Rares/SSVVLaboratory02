@@ -85,14 +85,17 @@ public abstract class AbstractXMLRepository<ID, E extends HasID<ID>> extends Abs
      * @return null daca obiectul s-a salvat cu succes sau obiectul daca acesta exista deja in memorie
      */
    @Override
-    public E save(E entity) {
+    public E save(E entity){
        E entity1 = super.save(entity);
        if (entity1 == null) {
             //saveToFile(entity);
        writeToFile();
        }
+       else {
+          return null;
+       }
 
-        return entity1;
+        return entity;
    }
     /**
      * Rescrie fisierul cu toate obiectele din memorie

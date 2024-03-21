@@ -1,8 +1,10 @@
 package ssvv.example.Features;
 
 import domain.Student;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
 import repository.NotaXMLRepo;
 import repository.StudentXMLRepo;
 import repository.TemaXMLRepo;
@@ -39,7 +41,7 @@ public class AddStudentFeatureTest {
 
 
     @Test
-    public void addStudent() {
+    public void addStudent() throws Exception {
         Student newStudent = new Student("1", "Mihai", 2, "mihai@yahoo.com");
         Student response = service.addStudent(newStudent);
         assertEquals("1", response.getID());
@@ -62,7 +64,7 @@ public class AddStudentFeatureTest {
 /////-----------------------------------------------------------------------------------------------------
 
     @Test
-    public void addStudentSuccessfully_TC_1() {
+    public void addStudentSuccessfully_TC_1() throws Exception {
         Student newStudent = new Student("x001", "ion", 1, "ion@stud.com");
         Student response = service.addStudent(newStudent);
         assertEquals(newStudent, response);
@@ -73,26 +75,36 @@ public class AddStudentFeatureTest {
     }
 
     @Test
-    public void addStudEmptyStrings_TC_2 () {
+    public void addStudEmptyString_TC_2 () {
         Student newStudent = new Student("", "ion", 1, "ion@stud.com");
         Throwable response = assertThrows(ValidationException.class, () -> service.addStudent(newStudent));
         assertEquals("Id incorect!", response.getMessage());
+    }
 
+
+    @Test
+    public void addStudEmptyString_TC_3 () {
         Student newStudent2 = new Student("x002", "", 1, "ion@stud.com");
         Throwable response2 = assertThrows(ValidationException.class, () -> service.addStudent(newStudent2));
         assertEquals("Nume incorect!", response2.getMessage());
     }
 
     @Test
-    public void addStudNullFields_TC_3 () {
+    public void addStudNullFields_TC_4 () {
         Student newStudent = new Student(null, "ion", 1, "ion@stud.com");
         Throwable response = assertThrows(ValidationException.class, () -> service.addStudent(newStudent));
         assertEquals("Id incorect!", response.getMessage());
+    }
 
+    @Test
+    public void addStudNullFields_TC_5 () {
         Student newStudent2 = new Student("x002", null, 1, "ion@stud.com");
         Throwable response2 = assertThrows(ValidationException.class, () -> service.addStudent(newStudent2));
         assertEquals("Nume incorect!", response2.getMessage());
+    }
 
+    @Test
+    public void addStudNullFields_TC_6 () {
         Student newStudent3 = new Student("x003", "ion", 1, null);
         Throwable response3 = assertThrows(ValidationException.class, () -> service.addStudent(newStudent3));
         assertEquals("Email incorect!", response3.getMessage());
@@ -100,47 +112,48 @@ public class AddStudentFeatureTest {
 
 
     @Test
-    public void addStudIdNotUnique_TC_4() {
+    public void addStudIdNotUnique_TC_7() {
         Student newStudent = new Student("x001", "ion", 1, "ion@stud.com");
+        service.addStudent(newStudent);
         assertThrows(Exception.class, () -> service.addStudent(newStudent));
     }
 
     @Test
-    public void addStudSpecialChars_TC_5() {
+    public void addStudSpecialChars_TC_8() {
         Student newStudent = new Student("x001", "i0%n", 1, "ion@stud.com");
         assertThrows(Exception.class, () -> service.addStudent(newStudent));
     }
 
     @Test
-    public void addStudInvalidGroup_TC_6 () {
+    public void addStudInvalidGroup_TC_9 () {
         Student newStudent = new Student("x001", "ion", -1, "ion@stud.com");
         Throwable response = assertThrows(ValidationException.class, () -> service.addStudent(newStudent));
         assertEquals("Grupa incorecta!", response.getMessage());
     }
 
     @Test
-    public void addStudInvalidGroup_TC_7 () {
+    public void addStudInvalidGroup_TC_10 () {
         Student newStudent = new Student("x001", "ion", Integer.MAX_VALUE + 1, "ion@stud.com");
         Throwable response = assertThrows(ValidationException.class, () -> service.addStudent(newStudent));
         assertEquals("Grupa incorecta!", response.getMessage());
     }
 
     @Test
-    public void addStudInvalidEmail_TC_8 () {
+    public void addStudInvalidEmail_TC_11 () {
         Student newStudent = new Student("x001", "ion", 1, "ion.com");
         Throwable response = assertThrows(ValidationException.class, () -> service.addStudent(newStudent));
         assertEquals("Email incorect!", response.getMessage());
     }
 
     @Test
-    public void addStudInvalidEmail_TC_9 () {
+    public void addStudInvalidEmail_TC_12 () {
         Student newStudent = new Student("x001", "ion", 1, "ion@stud");
         Throwable response = assertThrows(ValidationException.class, () -> service.addStudent(newStudent));
         assertEquals("Email incorect!", response.getMessage());
     }
 
     @Test
-    public void addStudValidBVA_TC_10 () {
+    public void addStudValidBVA_TC_13 () throws Exception {
         Student newStudent = new Student("x002", "ion", 0, "ion@stud.com");
         Student response = service.addStudent(newStudent);
         assertEquals(newStudent, response);
@@ -151,7 +164,7 @@ public class AddStudentFeatureTest {
     }
 
     @Test
-    public void addStudValidBVA_TC_11 () {
+    public void addStudValidBVA_TC_14 () throws Exception {
         Student newStudent = new Student("x003", "ion", Integer.MAX_VALUE - 1, "ion@stud.com");
         Student response = service.addStudent(newStudent);
         assertEquals(newStudent, response);
@@ -162,7 +175,7 @@ public class AddStudentFeatureTest {
     }
 
     @Test
-    public void addStudValidBVA_TC_12 () {
+    public void addStudValidBVA_TC_15 () throws Exception {
         Student newStudent = new Student("x003", "ion", Integer.MAX_VALUE, "ion@stud.com");
         Student response = service.addStudent(newStudent);
         assertEquals(newStudent, response);
@@ -170,5 +183,13 @@ public class AddStudentFeatureTest {
         assertEquals("ion", response.getNume());
         assertEquals(Integer.MAX_VALUE, response.getGrupa());
         assertEquals("ion@stud.com", response.getEmail());
+    }
+
+    @After
+    public void tearDown(){
+        studentFileRepository.delete("1");
+        studentFileRepository.delete("x001");
+        studentFileRepository.delete("x002");
+        studentFileRepository.delete("x003");
     }
 }
