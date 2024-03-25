@@ -52,7 +52,7 @@ public class AddAssignmentFeatureTest {
 
     @Test
     public void addAssignmentInvalid() throws Exception {
-        Tema newTema = new Tema(null,"tema test 2", 11, 10);
+        Tema newTema = new Tema("","tema test 2", 11, 10);
 
         Throwable response = assertThrows(ValidationException.class, () -> service.addTema(newTema));
         assertEquals("Numar tema invalid!", response.getMessage());
@@ -64,10 +64,7 @@ public class AddAssignmentFeatureTest {
 
     @After
     public void tearDown(){
-        studentFileRepository.delete("1");
-        studentFileRepository.delete("x001");
-        studentFileRepository.delete("x002");
-        studentFileRepository.delete("x003");
+        temaFileRepository.delete("11");
     }
 
 }

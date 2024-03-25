@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b36d879d-7101-4287-905a-b9d16a497db9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/Features/AddAssignmentFeatureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/Features/AddAssignmentFeatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/Features/AddAssignmentFeatureTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,28 +32,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;AddStudFeat&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "AddAssignemntFeature",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\i.dezmirean\OneDrive - Accenture\Desktop\Sem6\SSVV\Git\SSVVLaboratory02" />
       <recent name="C:\Users\i.dezmirean\OneDrive - Accenture\Desktop\Sem6\SSVV\Git\SSVVLaboratory02\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddStudentFeatureTest">
+  <component name="RunManager" selected="JUnit.AddAssignmentFeatureTest">
+    <configuration name="AddAssignmentFeatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSVV02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.Features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddAssignmentFeatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddAssignmentFeatureTest.addAssignmentInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSVV02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.Features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddAssignmentFeatureTest" />
+      <option name="METHOD_NAME" value="addAssignmentInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddAssignmentFeatureTest.addAssignmentSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSVV02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.Features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddAssignmentFeatureTest" />
+      <option name="METHOD_NAME" value="addAssignmentSuccessful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddStudentFeatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSVV02" />
       <extension name="coverage">
@@ -64,54 +113,6 @@
       <option name="PACKAGE_NAME" value="ssvv.example.Features" />
       <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddStudentFeatureTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddStudentFeatureTest.addStudInvalidEmail_TC_11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSVV02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.Features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddStudentFeatureTest" />
-      <option name="METHOD_NAME" value="addStudInvalidEmail_TC_11" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddStudentFeatureTest.addStudInvalidEmail_TC_12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSVV02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.Features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddStudentFeatureTest" />
-      <option name="METHOD_NAME" value="addStudInvalidEmail_TC_12" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddStudentFeatureTest.addStudSpecialChars_TC_8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSVV02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.Features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example.Features" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.Features.AddStudentFeatureTest" />
-      <option name="METHOD_NAME" value="addStudSpecialChars_TC_8" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddAssignmentFeatureTest" />
+        <item itemvalue="JUnit.AddAssignmentFeatureTest.addAssignmentSuccessful" />
+        <item itemvalue="JUnit.AddAssignmentFeatureTest.addAssignmentInvalid" />
         <item itemvalue="JUnit.AddStudentFeatureTest" />
         <item itemvalue="JUnit.AddStudentFeatureTest.addStudent" />
-        <item itemvalue="JUnit.AddStudentFeatureTest.addStudInvalidEmail_TC_12" />
-        <item itemvalue="JUnit.AddStudentFeatureTest.addStudSpecialChars_TC_8" />
-        <item itemvalue="JUnit.AddStudentFeatureTest.addStudInvalidEmail_TC_11" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +171,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ssvv/example/Features/AddAssignmentFeatureTest.java</url>
+          <line>56</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
